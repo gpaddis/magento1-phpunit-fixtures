@@ -1,4 +1,4 @@
-# magento1-phpunit-fixtures
+# magento1-phpunit-testdata
 This repository contains a collection of common YAML fixtures for the Magento 1 testing framework [Ecomdev_PHPUnit](https://github.com/EcomDev/EcomDev_PHPUnit).
 
 ## Resources
