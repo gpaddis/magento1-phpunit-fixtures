@@ -1,0 +1,49 @@
+eav:
+  catalog_product:
+    - entity_id: 1
+      sku: simple-1
+      type_id: simple
+      attribute_set_id: 4
+      status: 1 # enabled
+      color: green
+      stock:
+        qty: 100
+        is_in_stock: 1
+    - entity_id: 2
+      sku: simple-2
+      type_id: simple
+      attribute_set_id: 4
+      status: 1 # enabled
+      color: red
+      stock:
+        qty: 100
+        is_in_stock: 1
+    - entity_id: 3
+      sku: conf-1
+      name: configurable-product
+      type_id: configurable
+      attribute_set_id: 4
+      status: 1 # enabled
+      super_attributes:
+        - color
+      configurable_children:
+        - 1
+        - 2
+
+tables:
+  eav_attribute_option:
+    - option_id: 3
+      attribute_id: 92
+      sort_order: 0
+    - option_id: 4
+      attribute_id: 92
+      sort_order: 0
+  eav_attribute_option_value:
+    - value_id: 3
+      option_id: 3
+      store_id: 0
+      value: green
+    - value_id: 4
+      option_id: 4
+      store_id: 0
+      value: red
