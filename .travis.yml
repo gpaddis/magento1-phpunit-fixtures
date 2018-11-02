@@ -17,7 +17,7 @@ matrix:
     - php: 7.1
     - php: 7.2
 env:
-  - MAGENTO_VERSION="magento-mirror-1.9.3.8"
+  - MAGENTO_VERSION="magento-mirror-1.9.3.4"
 
 script:
 - curl -sSL https://raw.githubusercontent.com/gpaddis/MageTestStand/master/setup.sh | bash
