@@ -1,10 +1,9 @@
 <?php
 
 /**
- * @package    Gpaddis_TestData
- * @author     Gianpiero Addis <gianpiero.addis@gmail.com>
+ * @package Gpaddis_TestData
+ * @author  Gianpiero Addis <gianpiero.addis@gmail.com>
  *
- * PHPUnit Class Annotations
  * @group Gpaddis_TestData
  */
 class Gpaddis_TestData_Test_Model_Customer extends EcomDev_PHPUnit_Test_Case
