@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Gpaddis_TestData>
+            <version>0.1.0</version>
+        </Gpaddis_TestData>
+    </modules>
+
+    <global>
+        <helpers>
+            <gpaddis_testdata>
+                <class>Gpaddis_TestData_Helper</class>
+            </gpaddis_testdata>
+        </helpers>
+    </global>
+
+    <frontend>
+        <translate>
+            <modules>
+                <gpaddis_testdata>
+                    <files>
+                        <default>Gpaddis_TestData.csv</default>
+                    </files>
+                </gpaddis_testdata>
+            </modules>
+        </translate>
+    </frontend>
+
+    <phpunit>
+        <suite>
+            <modules>
+                <Gpaddis_TestData />
+            </modules>
+        </suite>
+    </phpunit>
+</config>

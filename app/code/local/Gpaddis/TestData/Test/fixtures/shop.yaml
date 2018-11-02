@@ -15,7 +15,7 @@ scope:
       website_id: 1
       group_id: 1
       code: basestore
-      name: Default Store View
+      name: Default Store
       is_active: 1
 config:
   default/general/country/allow: DE,GB
