@@ -6,29 +6,47 @@ eav:
       attribute_set_id: 4
       status: 1 # enabled
       color: green
+      url_key: simple-1
       stock:
         qty: 100
         is_in_stock: 1
+      website_ids:
+        - de_website
+        - uk_website
+      category_ids:
+        - 2 # Default Category
     - entity_id: 2
       sku: simple-2
       type_id: simple
       attribute_set_id: 4
       status: 1 # enabled
       color: red
+      url_key: simple-2
       stock:
         qty: 100
         is_in_stock: 1
+      website_ids:
+        - de_website
+        - uk_website
+      category_ids:
+        - 2 # Default Category
     - entity_id: 3
       sku: conf-1
       name: configurable-product
       type_id: configurable
       attribute_set_id: 4
       status: 1 # enabled
+      url_key: configurable
       super_attributes:
         - color
       configurable_children:
         - 1
         - 2
+      website_ids:
+        - de_website
+        - uk_website
+      category_ids:
+        - 2 # Default Category
 
 tables:
   eav_attribute_option:

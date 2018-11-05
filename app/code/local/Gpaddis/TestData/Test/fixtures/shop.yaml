@@ -1,8 +1,12 @@
 scope:
   website:
     - website_id: 1
-      code: base
-      name: Main Website
+      code: de_website
+      name: German Website
+      default_group_id: 1
+    - website_id: 2
+      code: uk_website
+      name: English Website
       default_group_id: 1
   group:
     - group_id: 1
@@ -15,7 +19,7 @@ scope:
       website_id: 1
       group_id: 1
       code: basestore
-      name: Default Store
+      name: Default German Store
       is_active: 1
 config:
   default/general/country/allow: DE,GB
