@@ -11,7 +11,9 @@ class Gpaddis_TestData_Test_Model_Product extends EcomDev_PHPUnit_Test_Case
     public function setUp()
     {
         $this->product = Mage::getModel('catalog/product');
+        parent::setUp();
     }
+
     /**
      * @test
      * @loadFixture ~Gpaddis_TestData/shop
