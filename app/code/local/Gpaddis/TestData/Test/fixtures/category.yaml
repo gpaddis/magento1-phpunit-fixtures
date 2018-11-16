@@ -1,0 +1,191 @@
+eav:
+  catalog_category:
+    -
+      entity_id: 1
+      parent_id: 0
+      created_at: 2013-01-15 10:58:43
+      updated_at: 2013-01-15 10:58:43
+      path: 1
+      position: 0
+      level: 0
+      children_count: 667
+      store_id: 1
+      custom_apply_to_products: NULL
+      custom_use_parent_settings: NULL
+      display_mode: NULL
+      image: NULL
+      include_in_menu: 1
+      is_active: NULL
+      is_anchor: NULL
+      landing_page: NULL
+      meta_description: NULL
+      meta_keywords: NULL
+      meta_title: NULL
+      name: Root Catalog
+      page_layout: NULL
+      path_in_store: NULL
+      thumbnail: NULL
+      url_key: NULL
+      url_path: NULL
+    -
+      entity_id: 2
+      parent_id: 1
+      created_at: 2013-01-15 10:58:43
+      updated_at: 2013-06-29 04:20:52
+      path: 1/2
+      position: 1
+      level: 1
+      children_count: 660
+      store_id: 1
+      custom_apply_to_products: 0
+      custom_use_parent_settings: NULL
+      display_mode: PRODUCTS
+      image: NULL
+      include_in_menu: 1
+      is_active: 1
+      is_anchor: 0
+      landing_page: NULL
+      meta_description: Default Category
+      meta_keywords: NULL
+      meta_title: Default Category
+      name: Default Category
+      page_layout: NULL
+      path_in_store: NULL
+      thumbnail: NULL
+      url_key: default-category
+      url_path: NULL
+    -
+      entity_id: 2656
+      parent_id: 2
+      created_at: 2013-03-26 12:13:33
+      updated_at: 2013-06-14 15:50:22
+      path: 1/2/2656
+      position: 1
+      level: 2
+      children_count: 138
+      store_id: 1
+      custom_apply_to_products: 0
+      custom_use_parent_settings: 0
+      display_mode: PAGE
+      image: 0
+      include_in_menu: 1
+      is_active: 1
+      is_anchor: 1
+      landing_page: 17
+      meta_description: Category 1
+      meta_keywords: Category 1
+      meta_title: Category 1
+      name: Category 1
+      page_layout: NULL
+      path_in_store: NULL
+      thumbnail: NULL
+      url_key: category-1
+      url_path: category-1
+    -
+      entity_id: 2657
+      parent_id: 2
+      created_at: 2013-03-26 12:13:35
+      updated_at: 2013-06-18 10:42:11
+      path: 1/2/2657
+      position: 2
+      level: 2
+      children_count: 246
+      store_id: 1
+      custom_apply_to_products: 0
+      custom_use_parent_settings: 0
+      display_mode: PAGE
+      image: 0
+      include_in_menu: 1
+      is_active: 1
+      is_anchor: 1
+      landing_page: 18
+      meta_description: Category 2
+      meta_keywords: NULL
+      meta_title: Category 2
+      name: Category 2
+      page_layout: NULL
+      path_in_store: NULL
+      thumbnail: NULL
+      url_key: category-2
+      url_path: category-2
+    -
+      entity_id: 2658
+      parent_id: 2
+      created_at: 2013-03-26 12:13:36
+      updated_at: 2013-10-30 13:55:16
+      path: 1/2/2658
+      position: 3
+      level: 2
+      children_count: 94
+      store_id: 1
+      custom_apply_to_products: 0
+      custom_use_parent_settings: 0
+      display_mode: PAGE
+      image: 0
+      include_in_menu: 1
+      is_active: 1
+      is_anchor: 1
+      landing_page: 19
+      meta_description: Category 3
+      meta_keywords: NULL
+      meta_title: Category 3
+      name: Category 3
+      page_layout: NULL
+      path_in_store: NULL
+      thumbnail: NULL
+      url_key: category-3
+      url_path: category-3
+    -
+      entity_id: 2659
+      parent_id: 2
+      created_at: 2013-03-26 12:13:38
+      updated_at: 2013-06-18 09:27:09
+      path: 1/2/2659
+      position: 4
+      level: 2
+      children_count: 117
+      store_id: 1
+      custom_apply_to_products: 0
+      custom_use_parent_settings: 0
+      display_mode: PAGE
+      image: 0
+      include_in_menu: 1
+      is_active: 1
+      is_anchor: 1
+      landing_page: 20
+      meta_description: Category 4
+      meta_keywords: NULL
+      meta_title: Category 4
+      name: Category 4
+      page_layout: NULL
+      path_in_store: NULL
+      thumbnail: NULL
+      url_key: category-4
+      url_path: category-4
+    -
+      entity_id: 2660
+      parent_id: 2
+      created_at: 2013-03-26 12:13:39
+      updated_at: 2013-06-18 09:29:38
+      path: 1/2/2660
+      position: 5
+      level: 2
+      children_count: 60
+      store_id: 1
+      custom_apply_to_products: 0
+      custom_use_parent_settings: 0
+      display_mode: PAGE
+      image: 0
+      include_in_menu: 1
+      is_active: 1
+      is_anchor: 1
+      landing_page: 21
+      meta_description: Category 5
+      meta_keywords: NULL
+      meta_title: Category 5
+      name: Category 5
+      page_layout: NULL
+      path_in_store: NULL
+      thumbnail: NULL
+      url_key: category-5
+      url_path: category-5
