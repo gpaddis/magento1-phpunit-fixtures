@@ -1,10 +1,10 @@
 <?php
 
 /**
- * @package Gpaddis_Testdata
+ * @package Gpaddis_TestData
  * @author  Gianpiero Addis <g.addis@lemundo.de>
  *
- * @group Gpaddis_Testdata
+ * @group Gpaddis_TestData
  */
 class Gpaddis_Testdata_Test_Model_Integration_Product extends EcomDev_PHPUnit_Test_Case_Controller
 {
