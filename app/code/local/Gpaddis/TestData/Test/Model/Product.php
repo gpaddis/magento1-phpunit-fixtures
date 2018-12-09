@@ -10,7 +10,6 @@ class Gpaddis_TestData_Test_Model_Product extends EcomDev_PHPUnit_Test_Case
 {
     public function setUp()
     {
-        $this->product = Mage::getModel('catalog/product');
         parent::setUp();
     }
 
@@ -21,11 +20,11 @@ class Gpaddis_TestData_Test_Model_Product extends EcomDev_PHPUnit_Test_Case
      */
     public function it_loads_simple_products()
     {
-        $this->product->load(1);
-        $this->assertEquals('simple', $this->product->getTypeId());
+        $product = Mage::getModel('catalog/product')->load(1);
+        $this->assertEquals('simple', $product->getTypeId());
 
-        $this->product->load(2);
-        $this->assertEquals('simple', $this->product->getTypeId());
+        $product->load(2);
+        $this->assertEquals('simple', $product->getTypeId());
     }
 
     /**
@@ -35,7 +34,7 @@ class Gpaddis_TestData_Test_Model_Product extends EcomDev_PHPUnit_Test_Case
      */
     public function it_loads_configurable_products()
     {
-        $this->product->load(3);
-        $this->assertEquals('configurable', $this->product->getTypeId());
+        $product = Mage::getModel('catalog/product')->load(3);
+        $this->assertEquals('configurable', $product->getTypeId());
     }
 }
