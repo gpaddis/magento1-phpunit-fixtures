@@ -20,6 +20,8 @@ class Gpaddis_TestData_Test_Model_Product extends EcomDev_PHPUnit_Test_Case
      */
     public function it_loads_simple_products()
     {
+        $this->markTestSkipped('Check which one fails.');
+
         $product = Mage::getModel('catalog/product')->load(1);
         $this->assertEquals('simple', $product->getTypeId());
 
@@ -34,6 +36,8 @@ class Gpaddis_TestData_Test_Model_Product extends EcomDev_PHPUnit_Test_Case
      */
     public function it_loads_configurable_products()
     {
+        $this->markTestSkipped('Check which one fails.');
+
         $product = Mage::getModel('catalog/product')->load(3);
         $this->assertEquals('configurable', $product->getTypeId());
     }

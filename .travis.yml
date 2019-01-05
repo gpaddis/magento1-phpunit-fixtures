@@ -6,18 +6,16 @@ sudo: false
 dist: precise
 
 php:
-  - 5.5
   - 5.6
   - 7.0
   - 7.1
-  - 7.2
+
+env:
+  - MAGENTO_VERSION: magento-mirror-1.9.3.10
 
 matrix:
   allow_failures:
     - php: 7.1
-    - php: 7.2
-env:
-    - MAGENTO_VERSION: magento-mirror-1.9.3.10
 
 script:
 - curl -sSL https://raw.githubusercontent.com/gpaddis/MageTestStand/master/setup.sh | bash
