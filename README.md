@@ -1,8 +1,8 @@
 # Unit testing Magento 1.x modules
 
-[![Build Status](https://travis-ci.com/gpaddis/magento1-phpunit-testdata.svg?branch=master)](https://travis-ci.com/gpaddis/magento1-phpunit-testdata)
+[![Build Status](https://travis-ci.com/gpaddis/magento1-tests.svg?branch=master)](https://travis-ci.com/gpaddis/magento1-tests)
 
-Unit tests are often a disregarded part of the Magento 1 module development workflow, since the setup can be very complex and often one has to solve many conflicts and issues in order to obtain a working system. This leads to the impossibility of establishing a solid CI/CD workflow and to a higher chance of introducing new bugs, especially when collaborating with other team members.
+Unit tests are usually disregarded in the Magento 1 module development workflow, since the setup can be very complex and often one has to solve many conflicts and issues in order to obtain a working system. This leads to the impossibility of establishing a solid CI/CD workflow and to a higher chance of introducing new bugs, especially when collaborating with other team members.
 
 This repository contains a collection of **fixtures**, **data providers** and **tests** for the Magento 1 testing framework [Ecomdev_PHPUnit](https://github.com/EcomDev/EcomDev_PHPUnit) to help developers overcome the steep learning curve and to start immediately with the actual tests. This configuration works out of the box on [Travis-CI](https://travis-ci.org/).
 
