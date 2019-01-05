@@ -1,0 +1,15 @@
+{
+    "name": "gpaddis/testdata",
+    "description": "",
+    "type": "magento-module",
+    "authors": [
+        {
+            "name": "Gianpiero Addis",
+            "email": "gianpiero.addis@gmail.com"
+        }
+    ],
+
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

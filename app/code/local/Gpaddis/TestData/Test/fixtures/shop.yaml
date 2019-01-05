@@ -1,0 +1,29 @@
+scope:
+  website:
+    - website_id: 1
+      code: de_website
+      name: German Website
+      default_group_id: 1
+    - website_id: 2
+      code: uk_website
+      name: English Website
+      default_group_id: 1
+  group:
+    - group_id: 1
+      website_id: 1
+      name: Main Website Store
+      default_store_id: 1
+      root_category_id: 2
+  store:
+    - store_id: 1
+      website_id: 1
+      group_id: 1
+      code: basestore
+      name: Default German Store
+      is_active: 1
+config:
+  default/general/country/allow: DE,GB
+  stores/default/checkout/options/enable_agreements: 0
+  stores/default/dev/log/active: 1
+  stores/default/dev/log/file: tests-system.log
+  stores/default/dev/log/exception_file: tests-exception.log
