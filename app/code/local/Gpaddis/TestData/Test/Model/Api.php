@@ -5,79 +5,47 @@
  * @author  Gianpiero Addis <g.addis@lemundo.de>
  *
  * @group Gpaddis_TestData
- * @see How can I programmatically create an api role (SOAP): https://magento.stackexchange.com/a/68188
  */
 class Gpaddis_TestData_Test_Model_Api extends EcomDev_PHPUnit_Test_Case
 {
-    public function setUp()
+    /**
+     * @test
+     * @loadFixture shop
+     * @loadFixture category
+     */
+    public function test_catalog_category_info()
     {
-        $this->api_username = 'john@example.com';
-        $this->api_key = 'secret-key';
+        $apiModel = Mage::getModel('catalog/category_api');
+        $categoryInfo = $apiModel->info(2);
 
-        $this->createApiRole();
-        $this->createApiUser();
+        $this->assertEquals('Default Category', $categoryInfo['name']);
     }
 
     /**
-     * Cleanup the test database.
+     * @test
+     * @loadFixture shop
+     * @loadFixture product
      */
-    public function tearDown()
+    public function test_catalog_product_info()
     {
-        $this->api_user->delete();
-        $this->api_role->delete();
-    }
+        $apiModel = Mage::getModel('catalog/product_api');
+        $productInfo = $apiModel->info(3);
 
-    /** @test */
-    public function it_gets_an_api_key()
-    {
-        $this->assertTrue(true);
-    }
-
-    /**
-     * Persist a new Api role in the database.
-     */
-    protected function createApiRole()
-    {
-        $this->api_role = Mage::getModel('api/roles')
-            ->setName('default-role')
-            ->setPid(false)
-            ->setRoleType('G')
-            ->save();
-
-        Mage::getModel('api/rules')
-            ->setRoleId($this->api_role->getId())
-            ->setResources(array('all'))
-            ->saveRel();
+        $this->assertEquals('configurable-product', $productInfo['name']);
     }
 
     /**
-     * Persist a new Api user in the database.
+     * @test
+     * @loadFixture shop
+     * @loadFixture product
      */
-    protected function createApiUser()
+    public function test_catalog_product_update()
     {
-        $this->api_user = Mage::getModel('api/user');
+        $apiModel = Mage::getModel('catalog/product_api');
 
-        $attributes = array(
-            'username' => $this->api_username,
-            'firstname' => 'John',
-            'lastname' => 'Smith',
-            'email' => 'john@example.com',
-            'api_key' => $this->api_key,
-            'api_key_confirmation' => $this->api_key,
-            'is_active' => 1,
-            'user_roles' => '',
-            'assigned_user_role' => '',
-            'role_name' => '',
-            'roles' => [$this->api_role->getId()]
-        );
+        $apiModel->update(2, ['sku' => 'new-sku']);
+        $productInfo = $apiModel->info(2);
 
-        $this->api_user->setData($attributes);
-
-        $this->api_user->save()->load($this->api_user->getId());
-
-        $this->api_user->setRoleIds([$this->api_role->getId()])
-            ->setRoleUserId($this->api_user->getUserId())
-            ->saveRelations();
-
+        $this->assertEquals('new-sku', $productInfo['sku']);
     }
 }
