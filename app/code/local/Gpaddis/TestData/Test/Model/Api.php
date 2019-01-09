@@ -10,6 +10,7 @@ class Gpaddis_TestData_Test_Model_Api extends EcomDev_PHPUnit_Test_Case
 {
     /**
      * @test
+     * @loadFixture registry
      * @loadFixture shop
      * @loadFixture category
      */
@@ -23,6 +24,7 @@ class Gpaddis_TestData_Test_Model_Api extends EcomDev_PHPUnit_Test_Case
 
     /**
      * @test
+     * @loadFixture registry
      * @loadFixture shop
      * @loadFixture product
      */
@@ -36,6 +38,7 @@ class Gpaddis_TestData_Test_Model_Api extends EcomDev_PHPUnit_Test_Case
 
     /**
      * @test
+     * @loadFixture registry
      * @loadFixture shop
      * @loadFixture product
      */
